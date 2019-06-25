@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacia TPI-2019</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sucursales</title>
+
 
     <script type="module" src="./Web-Components/tabla.js"></script>
     <script type="module" src="./Web-Components/menu.js"></script>
     <script type="module" src="./Control/restController.js"></script>
 
+
     <link href="Style/style.css" rel="stylesheet" type="text/css">
+
 
 </head>
 
@@ -25,26 +30,24 @@
         <div>
             <menu-wc></menu-wc>
         </div>
+
+        <combobox-tpi entidad="usuario" busqueda="nombre"></combobox-tpi>
     </nav>
-
-
 
     <main>
         <div class="row">
-
             <h2>
                 <center>
-                    PRODUCTOS FARMACEUTICOS
+                    Sucursales en todo el pais
                 </center>
             </h2>
 
             <div>
-                <tabla-dinamica busqueda="producto/tabla" paginacion="5"></tabla-dinamica>
+                <tabla-dinamica busqueda="sucursal" paginacion="5"></tabla-dinamica>
             </div>
 
         </div>
     </main>
-
 
     <article>
         <div class="aside">
