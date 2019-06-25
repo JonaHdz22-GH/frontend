@@ -1,7 +1,7 @@
 version: '3.6'
 services:
     frontend:
-        image: 172.17.0.1:5000/${VERSION}
+        image: 192.168.43.253:5000/${VERSION}
         ports:
           - "81:80"
         deploy:
